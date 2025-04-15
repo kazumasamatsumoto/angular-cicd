@@ -1,10 +1,4 @@
-import 'jest-preset-angular/setup-jest';
-
-// グローバルなJestマッチャーを設定
-global.beforeEach(() => {
-  // カスタムマッチャーなどの追加設定があれば記述
-});
-
+// テスト環境のDOMモックセットアップ
 Object.defineProperty(window, 'CSS', { value: null });
 Object.defineProperty(document, 'doctype', {
   value: '<!DOCTYPE html>'
