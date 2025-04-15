@@ -9,6 +9,7 @@ describe('AppComponent (Jest)', () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
     }).compileComponents();
+    console.log('beforeEach');
 
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
